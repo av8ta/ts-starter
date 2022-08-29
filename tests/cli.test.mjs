@@ -18,7 +18,7 @@ test('chmod +x ts script succeeds', () => {
 
 test('running ts cli script with ts-node succeeds', () => {
   return new Promise((resolve, reject) => {
-    exec(tsNodeCommand, (error, stdout) => {
+    exec(tsNodeCommand, (_, stdout) => {
       assert.strictEqual(stdout, '"Check ts" string length = 8\n')
       resolve()
     })
@@ -36,7 +36,7 @@ test('chmod +x js script succeeds', () => {
 
 test('running js cli script with node succeeds', () => {
   return new Promise((resolve, reject) => {
-    exec(`${jsScriptPath}`, (error, stdout) => {
+    exec(`${jsScriptPath}`, (_, stdout) => {
       assert.strictEqual(stdout, '"Check js" string length = 8\n')
       resolve()
     })
