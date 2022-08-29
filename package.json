@@ -16,8 +16,16 @@
   },
   "devDependencies": {
     "@types/node": "^18.7.13",
+    "fs-extra": "^10.1.0",
     "ts-node": "^10.9.1",
     "ts-standard": "^11.0.0",
     "typescript": "^4.8.2"
+  },
+  "ts-standard": {
+    "ignore": [
+      "dist",
+      "src/**/*.js",
+      "tests"
+    ]
   }
 }

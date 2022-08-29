@@ -2,12 +2,14 @@ lockfileVersion: 5.4
 
 specifiers:
   '@types/node': ^18.7.13
+  fs-extra: ^10.1.0
   ts-node: ^10.9.1
   ts-standard: ^11.0.0
   typescript: ^4.8.2
 
 devDependencies:
   '@types/node': 18.7.13
+  fs-extra: 10.1.0
   ts-node: 10.9.1_hwinnrf7y5nyyzygpj45jmvjia
   ts-standard: 11.0.0_didpiyo2rfi5cdhmtxbrexzdiq
   typescript: 4.8.2
@@ -953,6 +955,15 @@ packages:
     resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==}
     dev: true
 
+  /fs-extra/10.1.0:
+    resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==}
+    engines: {node: '>=12'}
+    dependencies:
+      graceful-fs: 4.2.10
+      jsonfile: 6.1.0
+      universalify: 2.0.0
+    dev: true
+
   /fs.realpath/1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
     dev: true
@@ -1264,6 +1275,14 @@ packages:
     hasBin: true
     dependencies:
       minimist: 1.2.6
+    dev: true
+
+  /jsonfile/6.1.0:
+    resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==}
+    dependencies:
+      universalify: 2.0.0
+    optionalDependencies:
+      graceful-fs: 4.2.10
     dev: true
 
   /jsx-ast-utils/3.3.3:
@@ -1878,6 +1897,11 @@ packages:
       has-bigints: 1.0.2
       has-symbols: 1.0.3
       which-boxed-primitive: 1.0.2
+    dev: true
+
+  /universalify/2.0.0:
+    resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}
+    engines: {node: '>= 10.0.0'}
     dev: true
 
   /uri-js/4.4.1:
