@@ -3,8 +3,8 @@
   "include": ["src/**/*"],
   "compilerOptions": {
     "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "nodenext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "typeRoots": ["./types", "./node_modules/@types"],
     "declaration": true,
     "outDir": "dist",
