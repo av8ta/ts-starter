@@ -1,1 +1,8 @@
-{}
+{
+  "scripts": {
+    "test": "node --test tests"
+  },
+  "volta": {
+    "node": "18.8.0"
+  }
+}
