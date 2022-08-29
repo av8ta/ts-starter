@@ -1,7 +1,7 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 
-import utils, { getStringLength } from '../dist/index.js'
+import utils, { getStringLength } from '../dist/lib/index.js'
 
 test('import of default export compiled by tsc passing test', t => {
   const count = utils('Check JS')

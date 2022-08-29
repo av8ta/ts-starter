@@ -1,5 +1,7 @@
 # ts starter
 
+because less is more
+
 ## goals
 
 - simplicity
@@ -8,4 +10,4 @@
 
 ## non-goals
 
-old compile targets. go away, already, internet explorer.
+old compile targets. go away, already, internet explorer

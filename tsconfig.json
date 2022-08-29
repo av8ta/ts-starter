@@ -1,14 +1,19 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "include": ["src/**/*"],
+  "include": [
+    "lib/**/*",
+    "bin/**/*"
+  ],
   "compilerOptions": {
     "target": "esnext",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "typeRoots": ["./types", "./node_modules/@types"],
+    "typeRoots": [
+      "./types",
+      "./node_modules/@types"
+    ],
     "declaration": true,
     "outDir": "dist",
-
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
