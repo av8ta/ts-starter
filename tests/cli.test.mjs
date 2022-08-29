@@ -5,7 +5,7 @@ import path from 'node:path'
 
 const tsScriptPath = path.join(process.cwd(), 'bin', 'ts-node.ts')
 const tsNodeCommand = `NODE_OPTIONS='--loader ts-node/esm' ${tsScriptPath}`
-const jsScriptPath = path.join(process.cwd(), 'dist', 'bin', 'node.js')
+const jsScriptPath = path.join(process.cwd(), 'library', 'bin', 'node.js')
 
 test('chmod +x ts script succeeds', () => {
   return new Promise((resolve, reject) => {

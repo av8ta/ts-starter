@@ -23,7 +23,7 @@
   },
   "ts-standard": {
     "ignore": [
-      "dist",
+      "library",
       "src/**/*.js",
       "tests"
     ]
