@@ -3,9 +3,11 @@
   "private": "true",
   "type": "module",
   "scripts": {
-    "build": "tsc --project tsconfig.json",
+    "build": "fse rimraf library && tsc --project tsconfig.json",
     "test": "npm run build && node --test tests",
     "lint": "ts-standard --fix",
+    "pretest": "npm run clean",
+    "clean": "fse rimraf library && fse rimraf dist",
     "cli": "NODE_OPTIONS='--loader ts-node/esm' ./bin/ts-node.ts"
   },
   "volta": {
@@ -15,6 +17,7 @@
     "node": ">=18.8.0"
   },
   "devDependencies": {
+    "@atao60/fse-cli": "^0.1.7",
     "@types/node": "^18.7.13",
     "fs-extra": "^10.1.0",
     "ts-node": "^10.9.1",
@@ -24,7 +27,6 @@
   "ts-standard": {
     "ignore": [
       "library",
-      "src/**/*.js",
       "tests"
     ]
   }
